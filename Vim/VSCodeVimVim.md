@@ -6,31 +6,31 @@
 
 [white_check_mark]: https://github.githubassets.com/images/icons/emoji/unicode/2705.png "white check mark"
 
-![white_check_mark] - 指令圆满完成
+:white_check_mark: - 指令圆满完成
 
 [star]: https://github.githubassets.com/images/icons/emoji/unicode/2b50.png "star"
 
-![white_check_mark] ![star] - VS Code 特定用户化指令完成
+:white_check_mark: :star: - VS Code 特定用户化指令完成
 
 [warning]: https://github.githubassets.com/images/icons/emoji/unicode/26a0.png "warning"
 
-![warning]- 一些指令变体还不能支持
+:warning:- 一些指令变体还不能支持
 
 [running_man]: https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png "running man"
 
-![running_man] - 开发中
+:running_man: - 开发中
 
 [arrow_down]: https://github.githubassets.com/images/icons/emoji/unicode/2b07.png "arrow down"
 
-![arrow_down] - 指令归为低开发优先级, 如果想深入了解， 打开发布的论题或参与讨论
+:arrow_down: - 指令归为低开发优先级, 如果想深入了解， 打开发布的论题或参与讨论
 
 [x1]: https://github.githubassets.com/images/icons/emoji/unicode/274c.png "x1"
 
-![x1] - 用当前 VSCode 提供的 API 不可能完成
+:x1: - 用当前 VSCode 提供的 API 不可能完成
 
 [1234]: https://github.githubassets.com/images/icons/emoji/unicode/1f522.png "1234"
 
-![1234] - 指令接受前置数字， 指定执行数
+:1234: - 指令接受前置数字， 指定执行数
 
 ## [2\. 路径图](#roadmap)
 
@@ -38,21 +38,21 @@ These are the big Vim features, put generally in the order in which we plan to i
 
 | 进度状态 | 相关指令 |
 | :-----: | :----: |
-| ![white_check_mark] | 一般模式(normal) |
-| ![white_check_mark] | 可视模式(visual) |
-| ![white_check_mark] | 可视行模式(visual line) |
-| ![white_check_mark] | 指令前置数字 |
-| ![white_check_mark] | **.** 操作符 |
-| ![white_check_mark] | 使用 / 和 ? 搜索 |
-| ![white_check_mark] | Undo/Redo 纠正操作 |
-| ![warning] | 指令重映射(command remapping) |
-| ![warning] | 位置标记(Marks) |
-| ![white_check_mark] | 文本对象 |
-| ![white_check_mark] | 可视块模式(visual block) |
-| ![white_check_mark] | 替换模式(Replace) |
-| ![white_check_mark] | 多选模式(Multip Select) |
-| ![warning] | 支持宏(Macros) |
-| ![warning] | 缓存区 / 窗口 / 标签页 |
+| :white_check_mark: | 一般模式(normal) |
+| :white_check_mark: | 可视模式(visual) |
+| :white_check_mark: | 可视行模式(visual line) |
+| :white_check_mark: | 指令前置数字 |
+| :white_check_mark: | **.** 操作符 |
+| :white_check_mark: | 使用 / 和 ? 搜索 |
+| :white_check_mark: | Undo/Redo 纠正操作 |
+| :warning: | 指令重映射(command remapping) |
+| :warning: | 位置标记(Marks) |
+| :white_check_mark: | 文本对象 |
+| :white_check_mark: | 可视块模式(visual block) |
+| :white_check_mark: | 替换模式(Replace) |
+| :white_check_mark: | 多选模式(Multip Select) |
+| :warning: | 支持宏(Macros) |
+| :warning: | 缓存区 / 窗口 / 标签页 |
 
 Now follows an exhaustive list of every known Vim command that we could find.
 

@@ -85,7 +85,10 @@ Enter the user’s password to confirm the change. Close the terminal and re-ope
 
 Using Zsh alone is enough for most users, but if you want to get even more out of this shell, installing Oh My Zsh is the way to go. To get Zsh, use the **wget** downloading tool to grab the latest version of the installation script. Keep in mind that you’ll need to have the Git package installed on your Linux PC. Search “git” in the package manager, and install it before using Wget.
 
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+```bash
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+```
 
 Oh My Zsh, once on your Linux PC, sets up a nice Zsh configuration file complete with dozens of different plugins to choose from. To enable any of these plugins, you’ll need to edit the Zsh config file. In the terminal, use the Nano text editor to open ~/.**zshrc**.
 

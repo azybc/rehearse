@@ -6,73 +6,73 @@
 
 [white_check_mark]: https://github.githubassets.com/images/icons/emoji/unicode/2705.png "white check mark"
 
-![white_check_mark] - 指令圆满完成
+:white_check_mark: - 指令圆满完成
 
 [star]: https://github.githubassets.com/images/icons/emoji/unicode/2b50.png "star"
 
-![white_check_mark] ![star] - VS Code 特定用户化指令完成
+:white_check_mark: :star: - VS Code 特定用户化指令完成
 
 [warning]: https://github.githubassets.com/images/icons/emoji/unicode/26a0.png "warning"
 
-![warning]- 一些指令变体还不能支持
+:warning:- 一些指令变体还不能支持
 
 [running_man]: https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png "running man"
 
-![running_man] - 开发中
+:running_man: - 开发中
 
 [arrow_down]: https://github.githubassets.com/images/icons/emoji/unicode/2b07.png "arrow down"
 
-![arrow_down] - 指令归为低开发优先级, 如果想深入了解， 打开发布的论题或参与讨论
+:arrow_down: - 指令归为低开发优先级, 如果想深入了解， 打开发布的论题或参与讨论
 
-[x1]: https://github.githubassets.com/images/icons/emoji/unicode/274c.png "x1"
+[x]: https://github.githubassets.com/images/icons/emoji/unicode/274c.png "x"
 
-![x1] - 用当前 VSCode 提供的 API 不可能完成
+:x: - 用当前 VSCode 提供的 API 不可能完成
 
 [1234]: https://github.githubassets.com/images/icons/emoji/unicode/1f522.png "1234"
 
-![1234] - 指令接受前置数字， 指定执行数
+:1234: - 指令接受前置数字， 指定执行数
 
 ## [2\. 路径图](#roadmap)
 
-These are the big Vim features, put generally in the order in which we plan to implement them.
+Vim 的各种特性非常庞杂， 总体列表如下， 表示我计划实现的次序。
 
-| 进度状态 | 相关指令 |
-| :-----: | :----: |
-| ![white_check_mark] | 一般模式(normal) |
-| ![white_check_mark] | 可视模式(visual) |
-| ![white_check_mark] | 可视行模式(visual line) |
-| ![white_check_mark] | 指令前置数字 |
-| ![white_check_mark] | **.** 操作符 |
-| ![white_check_mark] | 使用 / 和 ? 搜索 |
-| ![white_check_mark] | Undo/Redo 纠正操作 |
-| ![warning] | 指令重映射(command remapping) |
-| ![warning] | 位置标记(Marks) |
-| ![white_check_mark] | 文本对象 |
-| ![white_check_mark] | 可视块模式(visual block) |
-| ![white_check_mark] | 替换模式(Replace) |
-| ![white_check_mark] | 多选模式(Multip Select) |
-| ![warning] | 支持宏(Macros) |
-| ![warning] | 缓存区 / 窗口 / 标签页 |
+|      完成状况      |        相关指令               |
+| :----------------: | :---------------------------: |
+| :white_check_mark: | 一般模式(normal)              |
+| :white_check_mark: | 可视模式(visual)              |
+| :white_check_mark: | 可视行模式(visual line)       |
+| :white_check_mark: | 指令前置数字                  |
+| :white_check_mark: | **.** 操作符                  |
+| :white_check_mark: | 使用 / 和 ? 搜索              |
+| :white_check_mark: | Undo/Redo 纠正操作            |
+| :warning:          | 指令重映射(command remapping) |
+| :warning:          | 位置标记(Marks)               |
+| :white_check_mark: | 文本对象                      |
+| :white_check_mark: | 可视块模式(visual block)      |
+| :white_check_mark: | 替换模式(Replace)             |
+| :white_check_mark: | 多选模式(Multip Select)       |
+| :warning:          | 支持宏(Macros)                |
+| :warning:          | 缓存区 / 窗口 / 标签页        |
 
-Now follows an exhaustive list of every known Vim command that we could find.
+下面我将详尽列出我能找到的 Vim 指令及其实现状况。
 
 ## [3\. 用户化的指令](#custom-commands)
 
 * `gh` - 显示悬停的提示框。
 * `gb` - 在 `*` 匹配的随后发现的位置附加光标输入位置。
 
-## [](#left-right-motions)Left-right motions
+## [4\. 左右移动](#left-right-motions)
 
 | Status             | Command        | Description                                                                    |
 | ------------------ | -------------- | ------------------------------------------------------------------------------ |
-| :white_check_mark: | :1234: h       | left (also: CTRL-H, BS, or Left key)                                           |
-| :white_check_mark: | :1234: l       | right (also: Space or Right key)                                               |
-| :white_check_mark: | 0              | to first character in the line (also: Home key)                                |
-| :white_check_mark: | ^              | to first non-blank character in the line                                       |
-| :white_check_mark: | :1234: \$      | to the last character in the line (N-1 lines lower) (also: End key)            |
-| :white_check_mark: | g0             | to first character in screen line (differs from "0" when lines wrap)           |
-| :white_check_mark: | g^             | to first non-blank character in screen line (differs from "^" when lines wrap) |
-| :white_check_mark: | :1234: g\$     | to last character in screen line (differs from "\$" when lines wrap)           |
+| :white_check_mark: | :1234: h       | 光标左移1字符 ( 同键： CTRL-H, BS, 或左方向键 )                                |
+| :white_check_mark: | :1234: l       | 光标右移1字符 ( 同键： 空格键或右方向键 )                                      |
+| :white_check_mark: | 0              | 光标移到行首第1个字符 ( 同键： Home 键 )                                       |
+| :white_check_mark: | ^              | 光标移动到行首第1个非空白字符                                                  |
+| :white_check_mark: | :1234: \$      | 光标移动到行尾最后1个字符上，加数字向下移动 N-1 行行尾( 同键： End 键 )        |
+| :white_check_mark: | g0             | 光标移动到屏幕行首第1个字符，当长行在屏幕回绕时与 0 不同                       |
+| :white_check_mark: | g^             | 光标移动到屏幕行首第1个非空白字符上，当长行在屏幕回绕时与 ^ 不同               |
+| :white_check_mark: | :1234: g\$     | 光标移动到屏幕行尾最后1个字符上，当长行在屏幕回绕时与 \$ 不同                  |
 | :white_check_mark: | gm             | to middle of the screen line                                                   |
 | :white_check_mark: | :1234: \|      | to column N (default: 1)                                                       |
 | :white_check_mark: | :1234: f{char} | to the Nth occurrence of {char} to the right                                   |
@@ -82,7 +82,7 @@ Now follows an exhaustive list of every known Vim command that we could find.
 | :white_check_mark: | :1234: ;       | repeat the last "f", "F", "t", or "T" N times                                  |
 | :white_check_mark: | :1234: ,       | repeat the last "f", "F", "t", or "T" N times in opposite direction            |
 
-## [](#up-down-motions)Up-down motions
+## [5\. 上下移动](#up-down-motions)
 
 | Status             | Command   | Description                                                                               |
 | ------------------ | --------- | ----------------------------------------------------------------------------------------- |
@@ -97,40 +97,40 @@ Now follows an exhaustive list of every known Vim command that we could find.
 | :white_check_mark: | :1234: gk | up N screen lines (differs from "k" when line wraps)                                      |
 | :white_check_mark: | :1234: gj | down N screen lines (differs from "j" when line wraps)                                    |
 
-## [](#text-object-motions)Text object motions
+## [6\. 文本对象的光标移动](#text-object-motions)
 
-| Status             | Command    | Description                                                 |
-| ------------------ | ---------- | ----------------------------------------------------------- |
-| :white_check_mark: | :1234: w   | N words forward                                             |
-| :white_check_mark: | :1234: W   | N blank-separated WORDs forward                             |
-| :white_check_mark: | :1234: e   | N words forward to the end of the Nth word                  |
-| :white_check_mark: | :1234: E   | N words forward to the end of the Nth blank-separated WORD  |
-| :white_check_mark: | :1234: b   | N words backward                                            |
-| :white_check_mark: | :1234: B   | N blank-separated WORDs backward                            |
-| :white_check_mark: | :1234: ge  | N words backward to the end of the Nth word                 |
-| :white_check_mark: | :1234: gE  | N words backward to the end of the Nth blank-separated WORD |
-| :white_check_mark: | :1234: )   | N sentences forward                                         |
-| :white_check_mark: | :1234: (   | N sentences backward                                        |
-| :white_check_mark: | :1234: }   | N paragraphs forward                                        |
-| :white_check_mark: | :1234: {   | N paragraphs backward                                       |
-| :white_check_mark: | :1234: ]]  | N sections forward, at start of section                     |
-| :white_check_mark: | :1234: [[  | N sections backward, at start of section                    |
-| :white_check_mark: | :1234: ][  | N sections forward, at end of section                       |
-| :white_check_mark: | :1234: []  | N sections backward, at end of section                      |
-| :white_check_mark: | :1234: [(  | N times back to unclosed '('                                |
-| :white_check_mark: | :1234: [{  | N times back to unclosed '{'                                |
-| :arrow_down:       | :1234: [m  | N times back to start of method (for Java)                  |
-| :arrow_down:       | :1234: [M  | N times back to end of method (for Java)                    |
-| :white_check_mark: | :1234: ])  | N times forward to unclosed ')'                             |
-| :white_check_mark: | :1234: ]}  | N times forward to unclosed '}'                             |
-| :arrow_down:       | :1234: ]m  | N times forward to start of method (for Java)               |
-| :arrow_down:       | :1234: ]M  | N times forward to end of method (for Java)                 |
-| :arrow_down:       | :1234: [#  | N times back to unclosed "#if" or "#else"                   |
-| :arrow_down:       | :1234: ]#  | N times forward to unclosed "#else" or "#endif"             |
-| :arrow_down:       | :1234: [\* | N times back to start of a C comment "/\*"                  |
-| :arrow_down:       | :1234: ]\* | N times forward to end of a C comment "\*/"                 |
+| Status             | Command        | Description                                                 |
+| ------------------ | -------------- | ----------------------------------------------------------- |
+| :white_check_mark: | :1234: w       | N words forward                                             |
+| :white_check_mark: | :1234: W       | N blank-separated WORDs forward                             |
+| :white_check_mark: | :1234: e       | N words forward to the end of the Nth word                  |
+| :white_check_mark: | :1234: E       | N words forward to the end of the Nth blank-separated WORD  |
+| :white_check_mark: | :1234: b       | N words backward                                            |
+| :white_check_mark: | :1234: B       | N blank-separated WORDs backward                            |
+| :white_check_mark: | :1234: ge      | N words backward to the end of the Nth word                 |
+| :white_check_mark: | :1234: gE      | N words backward to the end of the Nth blank-separated WORD |
+| :white_check_mark: | :1234: )       | N sentences forward                                         |
+| :white_check_mark: | :1234: (       | N sentences backward                                        |
+| :white_check_mark: | :1234: }       | N paragraphs forward                                        |
+| :white_check_mark: | :1234: {       | N paragraphs backward                                       |
+| :white_check_mark: | :1234: ]]      | N sections forward, at start of section                     |
+| :white_check_mark: | :1234: \[\[    | N sections backward, at start of section                    |
+| :white_check_mark: | :1234: \]\[    | N sections forward, at end of section                       |
+| :white_check_mark: | :1234: \[\]    | N sections backward, at end of section                      |
+| :white_check_mark: | :1234: \[(     | N times back to unclosed '('                                |
+| :white_check_mark: | :1234: \[{     | N times back to unclosed '{'                                |
+| :arrow_down:       | :1234: \[m     | N times back to start of method (for Java)                  |
+| :arrow_down:       | :1234: \[M     | N times back to end of method (for Java)                    |
+| :white_check_mark: | :1234: \])     | N times forward to unclosed ')'                             |
+| :white_check_mark: | :1234: \]}     | N times forward to unclosed '}'                             |
+| :arrow_down:       | :1234: \]m     | N times forward to start of method (for Java)               |
+| :arrow_down:       | :1234: \]M     | N times forward to end of method (for Java)                 |
+| :arrow_down:       | :1234: \[\#    | N times back to unclosed "#if" or "#else"                   |
+| :arrow_down:       | :1234: \]\#    | N times forward to unclosed "#else" or "#endif"             |
+| :arrow_down:       | :1234: \[\*    | N times back to start of a C comment "/\*"                  |
+| :arrow_down:       | :1234: \]\*    | N times forward to end of a C comment "\*/"                 |
 
-## [](#pattern-searches)Pattern searches
+## [7\. 模式匹配](#pattern-searches)
 
 | Status                    | Command                            | Description                                            | Note                                                                            |
 | ------------------------- | ---------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------- |

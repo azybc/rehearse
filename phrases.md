@@ -40,3 +40,9 @@
 
 ## orchestrate
 > The best way of **orchestrating** and running your docker environment is using docker-compose.
+
+## prerequisite
+> Traditional installation includes an installation program to run with a set of files that are copied to a prerequisite operating system.
+
+## exclusively
+> Not every app you will try to run in Docker will **exclusively** use JS dependencies.
